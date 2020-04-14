@@ -1,0 +1,99 @@
+
+/* Formattazzione della pagina */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Contenitore generale */
+
+.container {
+  width: 1170px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+/* Dimensioni del logo e display inline block per permettere di affiancarci elementi */
+
+.sx-nav img {
+  max-width: 100px;
+  display: inline-block;
+}  
+
+/* Lista sinistra in display flex per affiancare gli elementi grazie alla direction row */
+
+.list-sx {
+  display: display: flex;
+  list-style: none;
+}
+
+/* Nav bar sinistra: Con inline block mando gli elementi  uno accanto all'altro = display flex non cambia. */
+
+.list-sx li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Seleziono l'ultima scritta della lista per renderla grigia */
+
+.list-sx li:last-child a {
+  color: grey;
+}
+
+/*  Rendo header display flex per affiancare tutti gli elementi del menu grazie alla row direction e grazie a space betweeen distanzio le due nav tra loro */
+
+.header {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+
+/* Rendo display flex elementi all'interno della nav sinistra per poterli affiancare */
+
+.sx-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Elimino decorazione alla lista e coloro di nero le scritte */
+
+.list-sx a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Nav bar destra: Con display flex rendo gli elementi all'interno flex-item affiancati così da seguire la row direction */
+
+.list-dx {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+/* Distanzio le scritte del menu */
+
+.list-dx li {
+  margin-right: 20px;
+}
+
+/* Coloro di nero elementi della lista */
+
+.list-dx a {
+  text-decoration: none;
+  color: grey;
+}
+
+.list-dx button {
+  background: #eb008d;
+  padding: 10px 20px;
+  border-radius: 40px;
+  color: #fff;
+  border:none;
+}
+
+
+.list-dx i {
+  font-size: 8px;
+} 
