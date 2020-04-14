@@ -70,12 +70,18 @@
   display: flex;
   list-style: none;
   align-items: center;
+  
 }
 
 /* Distanzio le scritte del menu */
 
-.list-dx li {
+.list-dx > li {
   margin-right: 20px;
+  
+}
+
+.relative {
+  position: relative;
 }
 
 /* Coloro di nero elementi della lista */
@@ -85,6 +91,8 @@
   color: grey;
 }
 
+/* Creo layout del bottone */
+
 .list-dx button {
   background: #eb008d;
   padding: 10px 20px;
@@ -93,7 +101,43 @@
   border:none;
 }
 
+/* Diminuisco grandezza dell'icona freccia */
 
 .list-dx i {
   font-size: 8px;
 } 
+
+/* Creo il dropdown; lo rendo absolute per rimuoverlo dal flusso e far si che la posizione occupata sia indipendente; lo posiziono in modo da centrarlo con top e  left ed infine lo rendo display none per far si che sia visibile solo all'hover;  */
+
+.products-drop {
+  position: absolute;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+  background: white;
+  padding: 5px 0;
+  width: 330px;
+  left: -140%;
+  top: 40px;
+  
+  /* jQuery */
+  
+  display: none; 
+}
+
+/* Tolgo i pallini alla lista */
+
+.products-drop ul {
+  list-style: none;
+}
+
+/* Distanzio le varie voci del menu tra loro */
+
+.products-drop li {
+  padding: 15px 0;
+}
+
+
+ a:hover,
+ .list-sx li:last-child a:hover  {
+  color:#eb008d;
+}
+
