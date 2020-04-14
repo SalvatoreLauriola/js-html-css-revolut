@@ -135,6 +135,7 @@
   padding: 15px 0;
 }
 
+/* Colore delle voci del menu che cambia con hover */
 
  a:hover,
  .list-sx li:last-child a:hover  {

@@ -10,16 +10,19 @@
 </head>
 <body>
   
-
-
+  <!-- Contenitore principale che conterrà tutto con una sua grandezza posto al centro -->
 <div class="container">
 
+  <!-- Header con display flex che ordina elementi con space between -->
   <div class="header">
+    
     <!-- Navbar sinistra -->
     <div class="sx-nav">
-
+      
+      <!-- Immagine del logo -->
       <img src="img/logo-revolut.png" alt="logo">
-
+      
+      <!-- Lista sinistra -->
       <ul class="list-sx">
         <li><a href="#">PERSONALE</a></li>
         <li><a href="#">BUSINESS</a></li>
@@ -29,10 +32,15 @@
 
     <!-- Navbar destra -->
     <div class="dx-nav">
-
+      
+      <!-- Lista destra -->
       <ul class="list-dx">
+        
+        <!-- li con classe relative che ci servirà per jQuery-->
         <li class="relative"> 
           <a href="#">Tariffazione</a>
+          
+          <!-- Creo un div con position absolute per rimuovere dal flusso i vari menu a tendina e che applicherò ad ogni menu -->
           <div class="products-drop">
             <ul>
               <li><a href="#">Trasferimenti di denaro</a></li>
@@ -45,7 +53,7 @@
             </ul>
           </div>
         </li>
-          
+          <!-- Diamo classe relative per selezionare in jQuery solo i menu che contengono voci al loro interno e perchè ci serve poi fare uscire dal flusso il products drop con position absolute-->
         <li class="relative">
           <a href="#">Conti</a>
           <div class="products-drop">
@@ -76,34 +84,29 @@
           </div>
         </li>
         
+        <!-- Parte finale della lista destra -->
         <li><a href="#">Azienda</a></li>
         <li><a href="#">Aiuto</a></li>
         <li><a class='icon' href="#">IT<i class="fas fa-chevron-down"></i></a></li>
         <li><button>Scarica l'app</button></li>
+
+        <!-- Chiusura lista destra  -->
       </ul>
+      
+      <!--Chiusura navbar destra  -->
     </div>
+  
+    <!-- Chiusura Header -->
+  </div>   
 
-
-  </div>
-
-
-
-
-
+<!-- Chiusura del container principale -->
 </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
+<!-- Script jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="script/main.js"></script>
 
